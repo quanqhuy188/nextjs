@@ -1,18 +1,15 @@
-import Link from 'next/link'
-import styles from "./page.module.css";
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Description Homepage ',
+}
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-        <ul>
-          <li>
-          <Link href="/facebook">facebook</Link>
-          </li>
-          <li>
-          <Link href="/youtube">youtube</Link>
-          </li>
 
-        </ul>
+  return (
+    <div >
+      Home Page
     </div>
   );
 }
